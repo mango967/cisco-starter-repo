@@ -11,3 +11,94 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  padding-left: 10px;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.header {
+  padding: 10px 5px;
+  overflow: hidden;
+  background-color: rgba(204, 234, 240, 0.538);
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 20px;
+  line-height: 10px; 
+}
+
+.header a.logo {
+  font-size: 30px;
+}
+ /*dropdown button*/
+ .dropbtn {
+  background-color:rgba(204, 234, 240, 0.538);
+  color: black;
+  padding: 10px; 
+  border-radius: 17px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+ }
+
+ .dropbtn:hover, .dropbtn:focus {
+  background-color: rgba(204, 234, 240, 0.982);
+ }
+
+ .dropdown {
+  display: none;
+  position: relative;
+  display: inline-block;
+ }
+
+ .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ }
+
+ .dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  display: block;
+ }
+
+ .dropdown-content:hover {
+  background-color: rgba(204, 234, 240, 0.982);
+ }
+
+.show {
+  display: block;
+}
+.header a.active {
+  background-color:rgb(163, 217, 228);
+  color: white;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a{
+    float: none;
+    display: flex;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
